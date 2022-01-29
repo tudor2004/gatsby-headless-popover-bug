@@ -2,10 +2,6 @@ import React from "react"
 
 import { Popover } from "@headlessui/react"
 
-const Button = props => {
-  return <button type="button">{props.children}</button>
-}
-
 export default function Home() {
   return (
     <div>
@@ -18,8 +14,8 @@ export default function Home() {
 
             <Popover.Panel tabIndex={-1}>
               <div>
-                <Button>First Button</Button>
-                <Button>Second Button</Button>
+                <button type="button">First button</button>
+                <button type="button">Second button</button>
               </div>
             </Popover.Panel>
           </>
